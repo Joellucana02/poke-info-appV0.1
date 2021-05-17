@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poke-app</title>
+    <title>Pokemon Info</title>
+    <link rel="stylesheet" href="css/stylesIndex.css">
 </head>
 <body>
-    <p>Pokemon-app</p>
+    <nav>
+        <a href="index.html">LOGO</a>
+        <ul class="nav-wrapper">
+            <li><a href="index.html">Home</a></li>
+            <li>About</li>
+            <li><a href="/pages/display.html">Pokepedia</a></li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main class="main-top">
+        <div class="container">
+            <div class="container-left-side">
+                <p>Pokemon book</p>
+            <h2>Are you looking for a pokemon? Our powerful search engine is what you need</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et laborum quaerat quam error repudiandae at, provident molestiae fuga non vitae expedita magni quidem, dolorum voluptates nesciunt similique ducimus ipsum voluptatum.</p>
+            <div class="search-box">
+                <input type="search" id="search" placeholder="Search">
+                <div class="search-icon">search icon</div>
+            </div>
     
+            </div>
+            <div class="container-rigth-side">
+
+            </div>
+
+        </div>
+    </main>
+    <div class="main-secondary">
+        <div class="pokemon-displayed">
+            <template id="poke-template">
+                <article class="pokemon-tag">
+                    <img src="#" alt="#">
+                    <h3 class="pokemon-tag__name"></h3>
+                                 
+                </article>
+            </template>
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/Joellucana02" target="_blank">Github</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="javascript/app.js"></script>
 </body>
 </html>
